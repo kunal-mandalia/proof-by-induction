@@ -24,6 +24,7 @@ def prove_arithmetic_series_formula(formula, valid_from_n, base_case, next_expre
     formula_next_term = expand_formula_k_plus_1(formula)
 
     # If the inductive hypothesis matches the formula for the next term
+    # then we have proved the formula
     return {
         'base_case_satisfied': base_case_satisfied,
         'inductive_hypothesis': inductive_hypothesis,
