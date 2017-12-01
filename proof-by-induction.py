@@ -29,7 +29,7 @@ def prove_arithmetic_series_formula(formula, valid_from_n, base_case, next_expre
         'base_case_satisfied': base_case_satisfied,
         'inductive_hypothesis': inductive_hypothesis,
         'formula_next_term': formula_next_term,
-        'proved': inductive_hypothesis == formula_next_term
+        'proved': base_case_satisfied && inductive_hypothesis == formula_next_term
     }
 
 # Sum of all even numbers
